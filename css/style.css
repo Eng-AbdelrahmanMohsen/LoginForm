@@ -1,0 +1,8 @@
+#success-name , #success-pass , #success-mail , #Success-Pass
+{
+    color: green;
+}
+#failed-name , #failed-pass , #failed-mail , #Failed-Pass
+{
+    color: red;
+}

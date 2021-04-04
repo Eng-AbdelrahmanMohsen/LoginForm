@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container w-25 mt-5">
+        <form id="form" class="border border-success bg-light">
+            <header>
+                <h2 class="text-center bg-secondary text-white p-2">Create Account</h2>
+            </header>
+            <div class="p-2 position-relative">
+                <label for="username" class="d-block">Name</label>
+                <input type="text" id="username" class="w-75 form-control d-inline-block">
+                <i class="fas fa-check-circle invisible " id="success-name"></i>
+                <i class="fas fa-exclamation-circle invisible " id="failed-name"></i>
+                <span id="usertxt" class="d-block"></span>
+            </div>
+
+            <div class="p-2 position-relative">
+                <label for="userpass" class="d-block">Password</label>
+                <input type="password" id="userpass" class="w-75 form-control d-inline-block">
+                <i class="fas fa-check-circle invisible" id="success-pass"></i>
+                <i class="fas fa-exclamation-circle invisible" id="failed-pass"></i>
+                <i class="far fa-eye mt-4 fs-4" id="show-password" onclick="showToggle()"></i>
+                <span id="passtxt" class="d-block"></span>
+            </div>
+
+            <div class="p-2 position-relative">
+                <label for="UserPass" class="d-block">Repeat Password</label>
+                <input type="password" id="UserPass" class="w-75 form-control d-inline-block">
+                <i class="fas fa-check-circle invisible" id="Success-Pass"></i>
+                <i class="fas fa-exclamation-circle invisible" id="Failed-Pass"></i>
+                <span id="PassTxt" class="d-block"></span>
+            </div>
+
+            <div class="p-2 position-relative">
+                <label for="usermail" class="d-block">Email</label>
+                <input type="email" id="usermail" class="w-75 form-control d-inline-block">
+                <i class="fas fa-check-circle invisible" id="success-mail"></i>
+                <i class="fas fa-exclamation-circle invisible" id="failed-mail"></i>
+                <span id="mailtxt" class="d-block"></span>
+            </div>
+        </form>
+        <button id="send-data" class="btn btn-secondary px-3 ms-2 my-2" onclick="validateInputs()">Submit</button>
+    </div>
+
+<!-- Javascript  -->
+
+<script src="js/myscript.js"></script>
+</body>
+</html>
